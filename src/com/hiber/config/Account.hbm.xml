@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 2, 2019 11:53:13 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.hiber.pojo.Account" table="ACCOUNT">
+        <id name="aid" type="int">
+            <column name="aid" />
+            <generator class="increment" />
+        </id>
+        <property name="orgid" type="int">
+            <column name="orgid" />
+        </property>
+         <property name="accounttype" type="java.lang.String">
+            <column name="accounttype" />
+        </property>
+        <property name="customername" type="java.lang.String">
+            <column name="customername" />
+        </property>
+        <property name="accountnumber" type="java.lang.String">
+            <column name="accountnumber" />
+        </property>
+        <property name="startingdate" type="java.lang.String">
+            <column name="startingdate" />
+        </property>
+        <property name="closingdate" type="java.lang.String">
+            <column name="closingdate" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="address" />
+        </property>
+     
+    </class>
+</hibernate-mapping>

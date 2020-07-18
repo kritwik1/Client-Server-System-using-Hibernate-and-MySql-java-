@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 12, 2019 11:10:09 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.hiber.pojo.Contact" table="CONTACT">
+        <id name="cid" type="int">
+            <column name="cid" />
+            <generator class="increment" />
+        </id>
+        <property name="aid" type="int">
+            <column name="aid" />
+        </property>
+         <property name="orgid" type="int">
+            <column name="orgid" />
+        </property>
+        <property name="customername" type="java.lang.String">
+            <column name="customername" />
+        </property>
+        <property name="Contactnumber" type="int">
+            <column name="contactnumber" />
+        </property>
+    </class>
+</hibernate-mapping>
